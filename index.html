@@ -1,0 +1,132 @@
+<html>
+<head>
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Simple JS Speedtest</title>
+  <link rel="stylesheet" href="css/main.css">
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script type="text/javascript" src="network.min.js"></script>
+  <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+  <script src="raphael-2.1.4.min.js"></script>
+  <script src="justgage-1.1.0.min.js"></script>
+  <script src="main.js"></script>
+  
+<style type="text/css">
+body, p, li {
+  margin: auto;
+  position: relative;
+  background: #333333;
+}
+a:link {
+  color: #333333;
+  text-decoration: none;
+}
+a:hover {
+  color: #2396FF;
+  text-decoration: none;
+}
+#imgbox {
+  max-width: 100%;
+  height: auto;
+}
+.boxes {
+	width:100%;
+	text-align:center;
+	vertical-align:top;
+	margin:0 auto;
+}
+.box {
+	display:inline-block;
+	width:45%;
+	max-width:100%;
+	text-align:center;
+	vertical-align:top;
+	margin:0 auto;
+}
+#bottom {
+  max-width: 100%;
+  height: auto;
+}
+/* 768px */
+@media screen and (max-width:48em) {
+.boxes { 
+		display:table;
+		margin:0 auto;
+		width:100%;
+		text-align:center;
+	}
+.box {
+		display:block;
+		width:90%;
+		margin:0 auto;
+		text-align:center;
+		vertical-align:top;
+	}
+}
+</style>
+  
+  <div style="text-align: center;" id="imgbox">
+		<a href="#"><img src="img/banner.jpg" alt="Banner" style="width: 100%; height: auto;"></a>
+		<br>
+	</div>
+
+</head>
+
+<body>
+<div id="boxes" style="background-color: #FFFFFF">
+	<div class="box">
+			<div class="gauge" id="gauge"></div>
+	</div>
+
+	<div class="box">
+		<br>
+		<div class="table">
+			<table>
+				<td colspan="2">TEST RESULTS</td>
+				<tr>
+					<td>IP ADDRESS</td>
+					<td id="ip" />
+					</tr>
+					<tr>
+					<td>ISP</td>
+					<td id="isp" />
+					</tr>
+					<tr>
+					<td>Packet RTT</td>
+					<td id="rtt" />
+					</tr>
+					<tr>
+					<td>Download</td>
+					<td id="down" />
+					</tr>
+					<tr>
+					<td>Upload</td>
+					<td id="up" />
+				</tr>
+			</table>
+		</div>
+		<br>
+		<br>
+			<div style="margin:0 auto" class="btn" id="start">Start Test</div>
+		<br>
+		<br>
+	</div>
+</body>
+<footer>
+
+<table id="bottom" style="text-align: left; width: 100%; margin-left: auto; margin-right: auto; background-color: rgb(51, 51, 51); color: white; font-family: Trebuchet MS;" border="0" cellpadding="20" cellspacing="2">
+	<tbody>
+		<tr>
+			<td style="vertical-align: top; text-align: center;"><font size="-1"><a style="color: white" href="#">Footer</a></font>
+			<small>
+				<br>
+			</small>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+</footer>
+</html>
